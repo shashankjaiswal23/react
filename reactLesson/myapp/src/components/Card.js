@@ -1,12 +1,14 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
     return (
       <div>
         card Name - TV Description - Phillips Size - 42''
-        <img src="https://i.insider.com/5484d9d1eab8ea3017b17e29?width=600&format=jpeg&auto=webp" />
+         {props.name}
+        <img src={props.imgOne} />
       </div>
     );
 }
 
 export default Card
+/// App > Body   > Card
